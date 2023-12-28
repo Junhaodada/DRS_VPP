@@ -8,6 +8,8 @@ n_G = 10
 delt_P_MTG_U_max = 0.5
 # MTG 最大允许滑坡速率
 delt_P_MTG_D_max = 0.5
+# MTG 最大储能
+P_MTG_i_max = 10
 # ==========ESS 相关==========
 # ESS 最大充电量
 P_ESS_ch_max = 100
@@ -21,10 +23,6 @@ e_dc = 0.8
 C_ESS_min = 0
 # ESS 最高储能量
 C_ESS_max = 100
-# ESS 初始能量
-C_ESS_0 = 500
-# ESS 结束能量
-C_ESS_end = 500
 # ==========电网相关==========
 # t 时 PIES 从电网买电量上界
 P_b_gr_max = 100
@@ -62,13 +60,16 @@ W = 4
 # T_m
 T_m_min = 0
 T_m_max = 23
+# T_c
+T_c_min = 0
+T_c_max = 23
 
 # 场景数
 n_s = 3*5
 
-F_m = 0
-F_c = 0
-F_cp = 0
-G_cp = 0
-F_mp = 0
-G_mp = 0
+F_m = 10
+F_c = 10
+F_cp = 10
+G_cp = 10
+F_mp = 10
+G_mp = 10
